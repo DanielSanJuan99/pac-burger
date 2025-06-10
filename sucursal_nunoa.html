@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/street-fighter" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Pac-Burger</title>
+</head>
+<body class="bebas-neue-regular">
+    <!-- Navbar -->
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">PAC-BURGER</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- Inicio -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <!-- Menú -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="carta.html">Menú</a>
+                    </li>
+                    <!-- Torneos/Eventos -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Torneos</a>
+                    </li>
+                    <!-- Delivery -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="delivery.html">Delivery</a>
+                    </li>
+                    <!-- Sucursales -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reservas
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sucursal_nunoa.html">Ñuñoa</a></li>
+                            <li><a class="dropdown-item" href="sucursal_u_chile.html">U. de Chile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#iniciarSesion">Log In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#registrarse">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light text-center mt-4">
+        <footer class="py-3">
+            <p class="mb-0">© 2025 Pac-Burger. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Sripts -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

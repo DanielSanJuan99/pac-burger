@@ -1,0 +1,9 @@
+{
+    "background.fullscreen": {
+        "images": ["https://cdn.discordapp.com/attachments/1255270796004429824/1255271454031745064/Shuu-Y.-Chang-and-Motoko-Hisako-Kanemoto-Horimiya-Season-2-Episode-5-Iura-768x432.jpg?ex=67331de4&is=6731cc64&hm=c49df0e61c785d1aff8b2a562725f605db090bc9149bdea6c6546f831fef734c&"], // urls of your images
+        "opacity": 0.1, // 0.85 ~ 0.95 recommended
+        "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
+        "position": "top", // alias to `background-position`, default `center`
+        "interval": 0 // seconds of interval for carousel, default `0` to disabled.
+    }
+}
