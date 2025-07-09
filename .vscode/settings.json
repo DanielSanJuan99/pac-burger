@@ -5,5 +5,10 @@
         "size": "cover", // also css, `cover` to self-adaption (recommended)，or `contain`、`200px 200px`
         "position": "top", // alias to `background-position`, default `center`
         "interval": 0 // seconds of interval for carousel, default `0` to disabled.
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#033609",
+        "titleBar.activeBackground": "#044B0C",
+        "titleBar.activeForeground": "#F0FEF1"
     }
 }
