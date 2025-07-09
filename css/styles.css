@@ -9,6 +9,9 @@
 body {
     background-image: url("../assets/fondo.png"); /* fondo izquierda */
     background-size: cover;
+    background-attachment: fixed; /* Fija el fondo */
+    background-position: center; /* Centra el fondo */
+    background-repeat: no-repeat; /* No repetir el fondo */
 }
 
   /* background-image: url("../assets/fondo-left.png"); */ /* fondo izquierda */
@@ -30,6 +33,24 @@ body {
     padding-top: 17%;
 }
 
+.desc h3 {
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; /* Sombra para crear el contorno */
+}
+
+.desc h4 {
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; /* Sombra para crear el contorno */
+}
+
+.desc strong {
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; /* Sombra para crear el contorno */
+}
+
+.titulo {
+    text-align: center;
+    color: #000000; /* Color del texto */
+    text-shadow: 1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 0 1px 0 #ffffff, 0 -1px 0 #ffffff; /* Sombra para crear el contorno */
+}
+
 .opcion-card:hover {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
@@ -42,4 +63,51 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
     margin: 20px auto; /* Centrar el contenedor */
     text-align: center;
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-galeria {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar el contenedor */
+    display: grid; /* Usar grid para el layout */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las cajas */
+    padding: 20px; /* Espacio interno del contenedor */
+}
+
+.img-menu {
+    width: 100%; /* Ancho completo de la imagen */
+    
+    height: 150px; /* Alto completo de la imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+.box:nth-child(1) {
+    grid-column-start: span 2;
+}
+
+.box:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+@media (max-width: 991px) {
+    .container-galeria {
+        padding: 30px; /* Aumentar el padding en pantallas pequeñas */
+        grid-template-columns: repeat(1, 1fr); /* Dos columnas en pantallas pequeñas */
+    }
+
+    .box:nth-child(1) {
+        grid-column-start: span 1;
+    }
+
+    .box:nth-child(4) {
+        grid-column-start: span 1;
+    }
+
 }
